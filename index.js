@@ -1,6 +1,6 @@
 export default async endpoint => {
   try {
-    const response = await fetch(endpoint || 'https://api.ipify.org');
+    const response = await fetch(endpoint || 'http://meuip.com/api/meuip.php');
     const ip = response.text();
     return ip;
   } catch (e) {
